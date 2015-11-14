@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_gray"
+        android:paddingBottom="10dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_item_main"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_item_main"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_item_main"
+            android:gravity="top"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_item_main"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/uu_black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

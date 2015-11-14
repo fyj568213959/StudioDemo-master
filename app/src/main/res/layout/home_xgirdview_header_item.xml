@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fillet="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <cy.studiodemo.view.FilletLayout
+        android:id="@+id/gallery_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fillet:fillet_height="1dp"
+        fillet:fillet_width="1dp" />
+    <!--圆角-->
+
+    <ImageView
+        android:id="@+id/linlang_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dip" />
+
+</FrameLayout>

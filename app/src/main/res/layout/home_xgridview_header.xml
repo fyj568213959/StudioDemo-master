@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="3dip"
+    android:paddingRight="3dip">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <cy.studiodemo.view.ViewFlow
+            android:id="@+id/vfHomeGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/viewflowindiclay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/fengyanjun/demo/StudioDemo-master/library_xutils/src/main/res"/><source path="/Users/fengyanjun/demo/StudioDemo-master/library_xutils/build/generated/res/rs/release"/><source path="/Users/fengyanjun/demo/StudioDemo-master/library_xutils/build/generated/res/resValues/release"/></dataSet><dataSet config="release"><source path="/Users/fengyanjun/demo/StudioDemo-master/library_xutils/src/release/res"/></dataSet><mergedItems/></merger>

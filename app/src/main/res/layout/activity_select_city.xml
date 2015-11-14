@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/city_home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bg_title">
+
+            <TextView
+                android:id="@+id/tv_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="选择城市"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_edittext_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wb_city_search_ablum_height"
+            android:background="@color/city_search_bg"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="6.0dip"
+                android:layout_marginTop="6.0dip"
+                android:background="@drawable/city_search_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/search_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9.0dip"
+                    android:src="@mipmap/wb_letter_search_normal" />
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@id/search_check"
+                    android:background="@null"
+                    android:hint="@string/city_hotcity_searchedittext_hint"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/uniform_black"
+                    android:textColorHint="@color/uniform_light_gray"
+                    android:textSize="12.0sp" />
+
+                <ImageButton
+                    android:id="@+id/ib_clear_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/et_search"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9.0dp"
+                    android:background="@drawable/btn_gray_delete_selector"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/public_allcity_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0.0dip"
+                android:background="@color/city_search_bg"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent" />
+
+            <ListView
+                android:id="@+id/public_search_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0.0dip"
+                android:background="@color/city_search_bg"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:visibility="gone" />
+
+            <cy.studiodemo.view.MyLetterListView
+                android:id="@+id/cityLetterListView"
+                android:layout_width="40dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#00000000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
